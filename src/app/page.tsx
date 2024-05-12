@@ -2,11 +2,13 @@ import Image from "next/image";
 import { Gallery } from "./components/layouts/gallery";
 import { Services } from "./components/layouts/services";
 import AboutSection from "./components/about-section";
+import { Experiment } from "./components/experiment";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between max-w-screen-2xl border-x">
+    <main className="flex min-h-screen flex-col items-center justify-between max-w-screen-2xl mx-auto overflow-x-hidden">
       <AboutSection />
+      <Experiment />
       {/* <Image
         className=""
         src="/img/bg-landing-section.jpg"
