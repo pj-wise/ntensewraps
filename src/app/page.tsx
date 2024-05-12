@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { Gallery } from "./components/layouts/gallery";
 import { Services } from "./components/layouts/services";
+import AboutSection from "./components/about-section";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <Image
+    <main className="flex min-h-screen flex-col items-center justify-between max-w-screen-2xl border-x">
+      <AboutSection />
+      {/* <Image
         className=""
         src="/img/bg-landing-section.jpg"
         width={1440}
@@ -38,7 +40,7 @@ export default function Home() {
         />
       </div>
       <Services />
-      <Gallery />
+      <Gallery /> */}
     </main>
   );
 }
