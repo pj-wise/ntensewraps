@@ -1,11 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import { IntroCar } from "../intro-car";
 
 export default function AboutSection() {
   return (
-    <div className="w-4/5 lg:w-[70%] py-12 relative">
+    <div className="py-12 relative">
       <Image
-        className="absolute -left-[65%] top-10 min-h-fit"
+        className="absolute -left-[452px] top-10 min-h-fit"
+        src="/img/hexagons.png"
+        width={805}
+        height={601}
+        alt="hexagons"
+      />
+      <Image
+        className="absolute -right-[452px] -bottom-[25%] min-h-fit"
         src="/img/hexagons.png"
         width={805}
         height={601}
@@ -23,22 +31,18 @@ export default function AboutSection() {
         </p>
       </div>
 
-      <div className="pt-24">
-        <div className="relative mx-auto h-[350px] sm:h-[453px] w-full max-w-[898px]">
+      <div className="pt-6 sm:pt-24">
+        <div className="relative mx-auto h-[300px] sm:h-[453px] w-full max-w-[898px]">
           <Image
-            className="absolute object-contain bottom-[40%] sm:bottom-1/4"
+            className="absolute object-contain bottom-1/4"
             src="/img/nw.png"
             width={898}
             height={322}
             alt="NW"
           />
-          <Image
-            className="absolute left-1/2 h-[70%] w-4/5 -translate-x-1/2 bottom-0 object-contain"
-            src="/img/intro-car.png"
-            width={520}
-            height={392}
-            alt="intro-car"
-          />
+          <div className="absolute bottom-0 -translate-x-1/2 left-1/2">
+            <IntroCar />
+          </div>
         </div>
       </div>
 
@@ -53,14 +57,6 @@ export default function AboutSection() {
         today to learn more about our PPF options and how we can help protect
         your investment.
       </p>
-
-      <Image
-        className="absolute -right-[45%] -bottom-[25%] min-h-fit"
-        src="/img/hexagons.png"
-        width={805}
-        height={601}
-        alt="hexagons"
-      />
     </div>
   );
 }
