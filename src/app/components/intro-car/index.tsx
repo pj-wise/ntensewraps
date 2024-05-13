@@ -1,25 +1,54 @@
+"use client";
 import Image from "next/image";
 import "./intro-car.css";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   className,
 }) => {
   return (
-    <div
+    <motion.section
       className={cn(
         "introCarParent mx-auto relative aspect-[5/3] w-[200px] 3xs:w-[300px] sm:w-[370px] md:w-[420px] lg:w-[470px] xl:w-[520px]",
         className
       )}
+      variants={{
+        hidden: { opacity: 0 },
+        show: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.5,
+            delayChildren: 1,
+          },
+        },
+      }}
+      initial="hidden"
+      animate="show"
     >
-      <Image
+      <motion.div
         className={cn("object-contain")}
-        src="/img/intro-car.png"
-        width={520}
-        height={392}
-        alt="intro-car"
-      />
-      <div className={cn("dashedLine1", "relative")}>
+        initial={{ opacity: 0, y: -300 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+      >
+        <Image
+          src="/img/intro-car.png"
+          width={520}
+          height={392}
+          alt="intro-car"
+        />
+      </motion.div>
+      <motion.div
+        className={cn("dashedLine1", "relative")}
+        variants={{
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+          },
+        }}
+        transition={{ ease: "easeOut" }}
+      >
         <Image
           className=""
           src="/img/dashed-line-1.png"
@@ -31,9 +60,18 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           PPF
           <span className="text-foreground font-medium block">Door</span>
         </span>
-      </div>
+      </motion.div>
 
-      <div className={cn("dashedLine2", "flex relative")}>
+      <motion.div
+        className={cn("dashedLine2", "flex relative")}
+        variants={{
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+          },
+        }}
+        transition={{ ease: "easeOut" }}
+      >
         <span className="absolute sm:-left-14 lg:-left-20 top-4 sm:-top-5 block text-primary font-medium">
           PPF
           <span className="text-foreground font-medium block ">Door</span>
@@ -45,9 +83,18 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           height={128}
           alt="dashed-2"
         />
-      </div>
+      </motion.div>
 
-      <div className={cn("dashedLine3", "relative")}>
+      <motion.div
+        className={cn("dashedLine3", "relative")}
+        variants={{
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+          },
+        }}
+        transition={{ ease: "easeOut" }}
+      >
         <span className="absolute sm:-left-5 lg:-left-6 sm:-top-12 lg:-top-16 block text-primary font-medium">
           PPF
           <span className="text-foreground font-medium block ">Door</span>
@@ -59,9 +106,18 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           height={98}
           alt="dashed-3"
         />
-      </div>
+      </motion.div>
 
-      <div className={cn("dashedLine4", "relative flex")}>
+      <motion.div
+        className={cn("dashedLine4", "relative flex")}
+        variants={{
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+          },
+        }}
+        transition={{ ease: "easeOut" }}
+      >
         <Image
           className=""
           src="/img/dashed-line-4.png"
@@ -73,9 +129,18 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           PPF
           <span className="text-foreground font-medium block ">Door</span>
         </span>
-      </div>
+      </motion.div>
 
-      <div className={cn("dashedLine5", "relative flex")}>
+      <motion.div
+        className={cn("dashedLine5", "relative flex")}
+        variants={{
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+          },
+        }}
+        transition={{ ease: "easeOut" }}
+      >
         <Image
           className=""
           src="/img/dashed-line-5.png"
@@ -87,7 +152,7 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           PPF
           <span className="text-foreground font-medium block ">Door</span>
         </span>
-      </div>
-    </div>
+      </motion.div>
+    </motion.section>
   );
 };
