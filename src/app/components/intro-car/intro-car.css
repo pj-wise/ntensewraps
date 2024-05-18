@@ -1,0 +1,226 @@
+.introCarParent {
+  container: introCarParent / inline-size;
+  /* border: 1px solid green; */
+}
+
+.dashedLine1,
+.dashedLine2,
+.dashedLine3,
+.dashedLine4,
+.dashedLine5 {
+  position: absolute;
+}
+
+.dashedLine1 span,
+.dashedLine2 span,
+.dashedLine3 span,
+.dashedLine4 span,
+.dashedLine5 span {
+  line-height: 1.25rem;
+  font-size: 1.875rem;
+}
+
+@container introCarParent (width >= 518px) {
+  span {
+    line-height: 1.75rem !important;
+  }
+  .dashedLine1 {
+    bottom: 155px;
+    left: -170px;
+    /* border: 1px solid violet; */
+  }
+  .dashedLine2 {
+    bottom: 220px;
+    left: 125px;
+    /* border: 1px solid violet; */
+  }
+
+  .dashedLine3 {
+    bottom: 308px;
+    left: 340px;
+    /* border: 1px solid violet; */
+  }
+
+  .dashedLine4 {
+    bottom: 219px;
+    right: -180px;
+    /* border: 1px solid violet; */
+  }
+
+  .dashedLine5 {
+    bottom: 49px;
+    right: -90px;
+    /* border: 1px solid violet; */
+  }
+}
+
+@container introCarParent (width >= 468px) and (width < 518px) {
+  span {
+    line-height: 1.75rem !important;
+  }
+  .dashedLine1 {
+    bottom: 140px;
+    left: -140px;
+    width: 160px;
+    /* border: 1px solid green; */
+  }
+
+  .dashedLine2 {
+    bottom: 200px;
+    left: 110px;
+    /* border: 1px solid green; */
+  }
+
+  .dashedLine3 {
+    bottom: 278px;
+    left: 310px;
+    /* border: 1px solid green; */
+  }
+
+  .dashedLine4 {
+    bottom: 184px;
+    right: -180px;
+    /* border: 1px solid green; */
+  }
+
+  .dashedLine5 {
+    bottom: 29px;
+    right: -90px;
+    /* border: 1px solid green; */
+  }
+}
+
+@container introCarParent (width >= 418px) and (width < 468px) {
+  span {
+    font-size: 1.25rem !important;
+    /* line-height: 1.75rem; */
+  }
+
+  .dashedLine1 {
+    bottom: 128px;
+    left: -110px;
+    /* border: 1px solid yellow; */
+
+    img {
+      width: 128px;
+      height: 18px;
+    }
+  }
+
+  .dashedLine2 {
+    bottom: 180px;
+    left: 100px;
+    /* border: 1px solid yellow; */
+
+    img {
+      width: 28px;
+      height: 109px;
+    }
+  }
+
+  .dashedLine3 {
+    bottom: 248px;
+    left: 280px;
+    /* border: 1px solid yellow; */
+
+    img {
+      width: 10px;
+      height: 76px;
+    }
+  }
+
+  .dashedLine4 {
+    bottom: 170px;
+    right: -120px;
+    /* border: 1px solid yellow; */
+
+    img {
+      width: 126px;
+      height: 9px;
+    }
+  }
+
+  .dashedLine5 {
+    bottom: 50px;
+    right: -60px;
+    /* border: 1px solid yellow; */
+
+    img {
+      width: 89px;
+      height: 89px;
+    }
+  }
+}
+
+@container introCarParent (width >= 368px) and (width < 418px) {
+  span {
+    font-size: 1.25rem !important;
+  }
+
+  .dashedLine1 {
+    bottom: 116px;
+    left: -70px;
+    width: 120px;
+    /* border: 1px solid blue; */
+
+    img {
+      width: 85px;
+      height: 12px;
+    }
+  }
+
+  .dashedLine2 {
+    bottom: 160px;
+    left: 90px;
+    height: 88px;
+    /* border: 1px solid blue; */
+
+    img {
+      width: 23px;
+      height: 89px;
+    }
+  }
+
+  .dashedLine3 {
+    bottom: 218px;
+    left: 245px;
+    /* border: 1px solid blue; */
+
+    img {
+      width: 7px;
+      height: 51px;
+    }
+  }
+
+  .dashedLine4 {
+    bottom: 150px;
+    right: -80px;
+    /* border: 1px solid blue; */
+
+    img {
+      width: 84px;
+      height: 6px;
+    }
+  }
+
+  .dashedLine5 {
+    bottom: 65px;
+    right: -35px;
+    /* border: 1px solid blue; */
+
+    img {
+      width: 59px;
+      height: 59px;
+    }
+  }
+}
+
+@container introCarParent (width < 368px) {
+  .dashedLine1,
+  .dashedLine2,
+  .dashedLine3,
+  .dashedLine4,
+  .dashedLine5 {
+    display: none;
+  }
+}

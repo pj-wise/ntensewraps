@@ -13,11 +13,17 @@ const config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
+      backgroundImage: {
+        landingImage: "url('/img/bg-landing-section.jpg')",
+      },
+      screens: {
+        "3xs": "320px",
+        "2xs": "420px",
+        xs: "520px",
+        "2xl": "1400px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
