@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <div className="py-12 relative">
+    <div id="about" className="py-12 relative layoutPadding">
       <Image
         className="absolute -left-[452px] top-10 min-h-fit"
         src="/img/hexagons.png"
@@ -37,9 +37,14 @@ export default function AboutSection() {
         <div className="relative mx-auto h-[300px] sm:h-[453px] w-full max-w-[850px]">
           <motion.div
             className="absolute object-contain bottom-1/4"
-            initial={{ opacity: 0, y: -200 }}
-            animate={{ opacity: 1, y: 0 }}
+            variants={{
+              hidden: { opacity: 0, y: -200 },
+              show: { opacity: 1, y: 0 },
+            }}
             transition={{ duration: 1, ease: "easeOut" }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
           >
             <Image src="/img/nw.png" width={898} height={322} alt="NW" />
           </motion.div>

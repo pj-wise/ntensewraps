@@ -18,19 +18,25 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
         show: {
           opacity: 1,
           transition: {
-            staggerChildren: 0.5,
+            staggerChildren: 0.3,
             delayChildren: 1,
           },
         },
       }}
       initial="hidden"
-      animate="show"
+      whileInView="show"
+      viewport={{ once: false }}
     >
       <motion.div
         className={cn("object-contain")}
-        initial={{ opacity: 0, y: -300 }}
-        animate={{ opacity: 1, y: 0 }}
+        variants={{
+          hidden: { opacity: 0, y: -300 },
+          show: { opacity: 1, y: 0 },
+        }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false }}
       >
         <Image
           src="/img/intro-car.png"

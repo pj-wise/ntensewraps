@@ -1,8 +1,13 @@
 import AboutSection from "./components/about-section";
+import { LandingSection } from "./components/landing-section";
+import { Navbar } from "./components/navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen px-[5%] md:px-[10%] flex-col items-center justify-between mx-auto overflow-x-hidden">
+    <main className="relative flex min-h-screen flex-col items-center justify-between mx-auto overflow-x-hidden">
+      <Navbar />
+
+      <LandingSection />
       <AboutSection />
 
       {/* <Services />

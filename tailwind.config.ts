@@ -15,6 +15,9 @@ const config = {
       padding: "2rem",
     },
     extend: {
+      backgroundImage: {
+        landingImage: "url('/img/bg-landing-section.jpg')",
+      },
       screens: {
         "3xs": "320px",
         "2xs": "420px",

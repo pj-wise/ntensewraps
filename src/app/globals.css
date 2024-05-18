@@ -76,4 +76,20 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .layoutPadding {
+    @apply px-[5%] md:px-[10%];
+  }
+
+  .link {
+    @apply font-medium text-xl lg:text-2xl text-foreground;
+  }
+
+  .gradientNtense {
+    @apply bg-gradient-to-r from-primary to-orange-500;
+  }
+
+  .gradientClipText {
+    @apply bg-clip-text text-transparent;
+  }
 }
