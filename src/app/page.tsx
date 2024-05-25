@@ -8,7 +8,7 @@ import { ServicesSection } from "./components/services-section";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-between mx-auto overflow-x-hidden">
+    <main className=" flex min-h-screen flex-col items-center justify-between mx-auto overflow-x-hidden">
       <Navbar />
       <LandingSection />
       <AboutSection />

@@ -22,33 +22,35 @@ export const MenuBody = (props: { showMenu: boolean; className?: string }) => {
   const linkClassName =
     "py-5 border-b-[0.5px] border-muted-foreground link hover:gradientNtense gradientClipText bg-foreground transition-colors";
   return (
-    <motion.div
-      variants={{
-        hidden: { y: "100%", opacity: 0, display: "none" },
-        show: { y: 0, opacity: 1, display: "flex" },
-      }}
-      animate={showMenu ? "show" : "hidden"}
-      transition={{ ease: "easeInOut", duration: 0.5 }}
-      className={cn(
-        "flex lg:hidden flex-col z-[999] absolute top-24 left-0 right-0 bottom-0 bg-black text-foreground layoutPadding",
-        props.className
-      )}
-    >
-      <Link href="#home" className={cn(linkClassName)}>
-        Home
-      </Link>
-      <Link href="#home" className={cn(linkClassName)}>
-        About
-      </Link>
-      <Link href="#home" className={cn(linkClassName)}>
-        Services
-      </Link>
-      <Link href="#home" className={cn(linkClassName)}>
-        Gallery
-      </Link>
-      <Link href="#home" className={cn(linkClassName)}>
-        Contact
-      </Link>
-    </motion.div>
+    <div className="lg:hidden">
+      <motion.div
+        variants={{
+          hidden: { y: "100%", opacity: 0, display: "none" },
+          show: { y: 0, opacity: 1, display: "flex" },
+        }}
+        animate={showMenu ? "show" : "hidden"}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
+        className={cn(
+          "flex flex-col z-[999] absolute top-24 left-0 right-0 bottom-0 bg-black text-foreground layoutPadding",
+          props.className
+        )}
+      >
+        <Link href="#home" className={cn(linkClassName)}>
+          Home
+        </Link>
+        <Link href="#home" className={cn(linkClassName)}>
+          About
+        </Link>
+        <Link href="#home" className={cn(linkClassName)}>
+          Services
+        </Link>
+        <Link href="#home" className={cn(linkClassName)}>
+          Gallery
+        </Link>
+        <Link href="#home" className={cn(linkClassName)}>
+          Contact
+        </Link>
+      </motion.div>
+    </div>
   );
 };

@@ -1,12 +1,23 @@
 "use client";
 import Link from "next/link";
 import { HamburgerMenu, MenuBody } from "../hamburger-menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const linkClassName =
     "link hover:gradientNtense gradientClipText bg-foreground transition-colors";
+
+  useEffect(() => {
+    if (showMenu) {
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100vh";
+    } else {
+      document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
+    }
+  }, [showMenu]);
   return (
     <>
       <nav className="hidden z-[999] lg:flex justify-between items-center bg-background left-0 right-0 absolute py-5 layoutPadding">
