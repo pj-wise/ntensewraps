@@ -3,7 +3,7 @@ import Link from "next/link";
 export const FooterSection = () => {
   return (
     <footer className="w-full layoutPadding pt-4 ">
-      <div className="px-6 mx-auto max-w-screen-lg flex gap-4 justify-between flex-wrap">
+      <div className="px-6 max-w-screen-format flex gap-4 justify-between flex-wrap">
         <div className=" max-md:min-w-[250px]">
           <h4 className="text-primary text-xl font-medium">Ntense Car Wrap</h4>
           <p className="pt-4 max-w-[252px]">

@@ -7,7 +7,7 @@ export const LandingSection = () => {
       id="hero"
       className="border-primary border-b-4 min-h-[732px] flex items-center justify-center w-full bg-landingImage bg-cover bg-center bg-no-repeat relative layoutPadding z-50"
     >
-      <div className="z-20 uppercase text-center pt-32">
+      <div className="z-20 uppercase text-center pt-32 max-w-screen-lg ">
         <motion.h1
           className="font-bold text-7xl tracking-wider"
           variants={{

@@ -21,7 +21,7 @@ export default function AboutSection() {
         height={601}
         alt="hexagons"
       />
-      <div className="flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-between max-w-screen-format">
         <div className="font-bold">
           <h3 className="text-2xl sm:text-3xl lg:text-5xl">INTRODUCING</h3>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl text-primary">PPF</h1>
@@ -33,7 +33,7 @@ export default function AboutSection() {
         </p>
       </div>
 
-      <div className="pt-10 md:pt-16 xl:pt-24 ">
+      <div className="pt-10 md:pt-16 xl:pt-24 max-w-screen-formato">
         <div className="relative mx-auto h-[300px] sm:h-[453px] w-full max-w-[850px]">
           <motion.div
             className="absolute object-contain bottom-1/4"
@@ -55,7 +55,7 @@ export default function AboutSection() {
       </div>
 
       <motion.p
-        className="text-muted-foreground font-medium text-xs sm:text-sm line-clamp-3 tracking-[2%] pt-7 sm:pt-14 text-center"
+        className="max-w-screen-format text-muted-foreground font-medium text-xs sm:text-sm line-clamp-3 tracking-[2%] pt-7 sm:pt-14 text-center"
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}

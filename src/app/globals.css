@@ -96,4 +96,8 @@
   .bottomUnderline {
     @apply relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:hover:w-full after:transition-all after:gradientNtense after:h-0.5;
   }
+
+  .max-w-screen-format {
+    @apply max-w-screen-lg mx-auto;
+  }
 }
