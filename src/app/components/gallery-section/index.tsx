@@ -54,7 +54,7 @@ export const GallerySection = () => {
   };
 
   return (
-    <div className="h-screen relative w-full layoutPadding text-center">
+    <div className="relative py-5 pb-16 w-full layoutPadding text-center">
       <h1 className="font-bold text-3xl sm:text-5xl">GALLERY</h1>
       <div className="py-3 flex flex-wrap gap-3 sm:gap-6 justify-center">
         {Object.values(CATEGORIES).map((val) => (
