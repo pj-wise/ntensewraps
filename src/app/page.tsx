@@ -1,4 +1,5 @@
 import AboutSection from "./components/about-section";
+import { GallerySection } from "./components/gallery-section";
 import { LandingSection } from "./components/landing-section";
 import { Navbar } from "./components/navbar";
 import { ServicesSection } from "./components/services-section";
@@ -10,6 +11,7 @@ export default function Home() {
       <LandingSection />
       <AboutSection />
       <ServicesSection />
+      <GallerySection />
     </main>
   );
 }

@@ -59,7 +59,7 @@ export const ServiceItem = ({ isSeeMore, title, imgSrc }: ServiceItemProps) => {
           <p className="mt-8 font-normal">SEE MORE</p>
         </div>
       ) : null}
-      <Image src={imgSrc} fill className=" object-fill" alt="Service-image " />
+      <Image src={imgSrc} fill className="object-fill" alt="Service Image" />
     </div>
   );
 };
