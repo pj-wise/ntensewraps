@@ -22,14 +22,11 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <div
-      id="services"
-      className="relativew-full h-full min-h-96 layoutPadding pt-12 pb-10"
-    >
+    <div id="services" className="relative w-full layoutPadding pt-12 pb-10">
       <h3 className="text-3xl sm:text-5xl font-semibold text-center">
         What services do we offer?
       </h3>
-      <div className="grid pt-8 gap-4 m grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-format max-sm:px-[10%] h-[800px] sm:h-[500px] lg:h-[400px]">
+      <div className="grid pt-8 gap-4 m grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-format max-sm:px-[10%] h-fit">
         {services.map(({ title, imgSrc }, index) => {
           return (
             <ServiceItem
@@ -53,8 +50,8 @@ export const ServicesSection = () => {
 
 export const ServiceItem = ({ isSeeMore, title, imgSrc }: ServiceItemProps) => {
   return (
-    <div className="relative overflow-hidden text-base font-medium rounded-3xl ">
-      <div className="absolute line-clamp-1 z-20 bg-primary text-background opacity-90 left-0 right-0 p-1 sm:p-3 px-6 text-center">
+    <div className="relative overflow-hidden text-base font-medium rounded-xl aspect-[5/3]">
+      <div className="absolute line-clamp-1 z-20 bg-primary text-background opacity-90 left-0 right-0 p-3 sm:p-2 px-6 text-center">
         {title}
       </div>
       {isSeeMore ? (
