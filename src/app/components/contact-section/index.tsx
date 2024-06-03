@@ -97,6 +97,7 @@ export const ContactSection = () => {
 
           <div className="flex border rounded w-full mt-3">
             <Input
+              name="subscription-email"
               placeholder="Enter your email"
               className="max-w-full w-full grow"
             />
