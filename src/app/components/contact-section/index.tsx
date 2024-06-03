@@ -71,7 +71,9 @@ export const ContactSection = () => {
         </form>
 
         <form
-          action=""
+          name="subscribe"
+          method="POST"
+          data-netlify="true"
           className="md:max-w-[354px] w-full flex flex-col gap-y-2"
         >
           <h3 className="text-base sm:text-lg text-center font-medium">
@@ -98,7 +100,10 @@ export const ContactSection = () => {
               placeholder="Enter your email"
               className="max-w-full w-full grow"
             />
-            <button className="text-base rounded px-5 py-1 font-medium">
+            <button
+              type="submit"
+              className="text-base rounded px-5 py-1 font-medium"
+            >
               Send
             </button>
           </div>
