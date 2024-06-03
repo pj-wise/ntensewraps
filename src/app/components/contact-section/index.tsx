@@ -26,7 +26,6 @@ export const ContactSection = () => {
           data-netlify={true}
           className="flex flex-col gap-y-1 w-full md:max-w-[354px]"
         >
-          <input type="hidden" name="form-name" value="contact" />
           <Input
             label="Name"
             {...register("name")}
@@ -61,7 +60,8 @@ export const ContactSection = () => {
         <form
           name="subscribe"
           method="POST"
-          data-netlify="true"
+          action="/success"
+          data-netlify={true}
           className="md:max-w-[354px] w-full flex flex-col gap-y-2"
         >
           <h3 className="text-base sm:text-lg text-center font-medium">
