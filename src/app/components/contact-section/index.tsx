@@ -109,7 +109,7 @@ export const Input = React.forwardRef<
   return (
     <div className="flex flex-col gap-y-1 w-full">
       {label ? (
-        <label className="text-lg font-medium capitalize">{name}</label>
+        <label className="text-lg font-medium capitalize">{label}</label>
       ) : null}
       <input
         ref={ref}
