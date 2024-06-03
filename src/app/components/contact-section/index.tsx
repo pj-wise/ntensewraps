@@ -24,6 +24,7 @@ export const ContactSection = () => {
       <h1 className="text-3xl sm:text-5xl text-center py-8">Contact Us</h1>
       <div className="flex flex-col md:flex-row gap-5 justify-between text-background max-w-screen-format w-full tracking-wide rounded px-7 md:px-14 py-4 min-h-[318px] bg-white">
         <form
+          data-netlify="true"
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col gap-y-1 w-full md:max-w-[354px]"
         >
