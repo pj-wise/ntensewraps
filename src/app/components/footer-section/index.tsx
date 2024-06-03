@@ -16,13 +16,13 @@ export const FooterSection = () => {
           <h4 className="text-primary text-xl font-medium">Website</h4>
           <ul className="text-base flex flex-col gap-y-2 font-medium tracking-wider">
             <li className="hover:underline pt-6">
-              <Link href="#">Services</Link>
+              <Link href="#services">Services</Link>
             </li>
             <li className="hover:underline">
               <Link href="#">Pricing</Link>
             </li>
             <li className="hover:underline">
-              <Link href="#">About</Link>
+              <Link href="#about">About</Link>
             </li>
           </ul>
         </div>
@@ -31,16 +31,16 @@ export const FooterSection = () => {
           <h4 className="text-primary text-xl font-medium">Contact</h4>
           <ul className="text-base flex flex-col gap-y-2 font-medium tracking-wider">
             <li className="hover:underline pt-6">
-              <Link href="#">Call us</Link>
+              <Link href="#contact">Call us</Link>
             </li>
             <li className="hover:underline">
-              <Link href="#">Contact form</Link>
+              <Link href="#contact">Contact form</Link>
             </li>
             <li className="hover:underline">
-              <Link href="#">Email us</Link>
+              <Link href="#contact">Email us</Link>
             </li>
             <li className="hover:underline">
-              <Link href="#">Location</Link>
+              <Link href="#contact">Location</Link>
             </li>
           </ul>
         </div>
@@ -52,7 +52,7 @@ export const FooterSection = () => {
               <Link href="#">Facebook</Link>
             </li>
             <li className="hover:underline">
-              <Link href="#">Instagram</Link>
+              <Link href="https://instagram.com/ntensecarwraps">Instagram</Link>
             </li>
             <li className="hover:underline">
               <Link href="#">Twitter</Link>

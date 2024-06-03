@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const LandingSection = () => {
   return (
@@ -52,12 +53,16 @@ export const LandingSection = () => {
           whileInView="show"
           viewport={{ once: false }}
         >
-          <button className="hover:bg-background/80 border border-primary py-1.5 px-4 rounded">
-            Contact us
-          </button>
-          <button className="hover:bg-background/80 border border-primary py-1.5 px-4 rounded">
-            Learn more
-          </button>
+          <Link href="#contact">
+            <button className="hover:bg-background/80 border border-primary py-1.5 px-4 rounded">
+              Contact us
+            </button>
+          </Link>
+          <Link href="#services">
+            <button className="hover:bg-background/80 border border-primary py-1.5 px-4 rounded">
+              Learn more
+            </button>
+          </Link>
         </motion.div>
       </div>
 

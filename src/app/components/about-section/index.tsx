@@ -64,7 +64,7 @@ export default function AboutSection() {
         vehicle with our premium Paint Protection Film. Experience peace of mind
         knowing your car is protected against the rigors of daily driving, all
         while maintaining that showroom shine.{" "}
-        <Link href="#contact-us" className="text-primary">
+        <Link href="#contact" className="text-primary">
           Contact us
         </Link>{" "}
         today to learn more about our PPF options and how we can help protect

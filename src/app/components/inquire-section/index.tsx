@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const InquireSection = () => {
   return (
     <div id="inquire" className="w-full layoutPadding">
@@ -11,9 +13,11 @@ export const InquireSection = () => {
             "Click the button below. Fill out the details and we’ll get back to you in less than 24 hrs."
           }
         </p>
-        <button className="bg-primary w-fit px-3.5 py-1.5 drop-shadow-lg text-foreground">
-          Inquire now
-        </button>
+        <Link href="#contact">
+          <button className="bg-primary w-fit px-3.5 py-1.5 drop-shadow-lg text-foreground">
+            Inquire now
+          </button>
+        </Link>
       </div>
     </div>
   );
