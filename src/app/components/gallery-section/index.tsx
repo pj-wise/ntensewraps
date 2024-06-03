@@ -77,7 +77,7 @@ export const GallerySection = () => {
           </button>
         ))}
       </div>
-      <div className="pt-12 mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 relative max-w-screen-lg">
+      <div className="pt-12 mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 relative max-w-screen-lg">
         {filteredGallery.map(({ imgSrc }, index) => (
           <GalleryItem key={`galleryItem-${index}`} imgSrc={imgSrc} />
         ))}
@@ -88,7 +88,7 @@ export const GallerySection = () => {
 
 export const GalleryItem = ({ imgSrc }: GalleryItemProps) => {
   return (
-    <div className="relative overflow-hidden rounded-lg aspect-video w-[clamp(10rem, 13rem,17rem)]">
+    <div className="relative overflow-hidden rounded-lg aspect-[5/4]">
       <Image src={imgSrc} alt="Image Item" fill className="object-fill" />;
     </div>
   );
