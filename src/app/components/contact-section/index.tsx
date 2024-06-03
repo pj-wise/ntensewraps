@@ -9,17 +9,34 @@ import { cn } from "@/lib/utils";
 export const ContactSection = () => {
   const {
     register,
+    handleSubmit,
     formState: { errors },
   } = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
   });
+
+  const onSubmit = async (values: z.infer<typeof contactSchema>) => {
+    console.log(values);
+    const res = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(values).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+
+    console.log("res", res);
+  };
 
   return (
     <div id="contact" className="w-full layoutPadding py-">
       <h1 className="text-3xl sm:text-5xl text-center py-8">Contact Us</h1>
       <div className="flex flex-col md:flex-row gap-5 justify-between text-background max-w-screen-format w-full tracking-wide rounded px-7 md:px-14 py-4 min-h-[318px] bg-white">
         <form
+          name="contact"
+          data-netlify-honeypot="bot-field"
           data-netlify="true"
+          onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col gap-y-1 w-full md:max-w-[354px]"
         >
           <Input
