@@ -39,6 +39,7 @@ export const ContactSection = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col gap-y-1 w-full md:max-w-[354px]"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <Input
             label="Name"
             {...register("name")}
