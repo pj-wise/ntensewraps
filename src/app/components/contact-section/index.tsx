@@ -34,7 +34,7 @@ export const ContactSection = () => {
       <div className="flex flex-col md:flex-row gap-5 justify-between text-background max-w-screen-format w-full tracking-wide rounded px-7 md:px-14 py-4 min-h-[318px] bg-white">
         <form
           name="contact"
-          data-netlify-honeypot="bot-field"
+          method="POST"
           data-netlify={true}
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col gap-y-1 w-full md:max-w-[354px]"
@@ -72,12 +72,10 @@ export const ContactSection = () => {
 
         <form
           name="subscribe"
-          action="/success"
           method="POST"
           data-netlify="true"
           className="md:max-w-[354px] w-full flex flex-col gap-y-2"
         >
-          <input type="hidden" name="form-name" value="subscribe" />
           <h3 className="text-base sm:text-lg text-center font-medium">
             Location
           </h3>
