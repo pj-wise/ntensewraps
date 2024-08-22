@@ -64,7 +64,7 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
         />
         <span className="absolute sm:-left-4 md:-left-8 text-primary font-semibold">
           PPF
-          <span className="text-foreground font-medium block">Door</span>
+          <span className="text-foreground font-medium block">Fender</span>
         </span>
       </motion.div>
 
@@ -80,7 +80,7 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
       >
         <span className="absolute sm:-left-14 lg:-left-20 top-4 sm:-top-5 block text-primary font-medium">
           PPF
-          <span className="text-foreground font-medium block ">Door</span>
+          <span className="text-foreground font-medium block ">Hood</span>
         </span>
         <Image
           className=""
@@ -103,7 +103,7 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
       >
         <span className="absolute sm:-left-5 lg:-left-6 sm:-top-12 lg:-top-16 block text-primary font-medium">
           PPF
-          <span className="text-foreground font-medium block ">Door</span>
+          <span className="text-foreground font-medium block ">Top</span>
         </span>
         <Image
           className=""
@@ -133,7 +133,7 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
         />
         <span className="absolute sm:-right-14 lg:-right-20 sm:-top-4 lg:-top-6 block text-primary font-medium">
           PPF
-          <span className="text-foreground font-medium block ">Door</span>
+          <span className="text-foreground font-medium block ">Rear</span>
         </span>
       </motion.div>
 
@@ -156,7 +156,7 @@ export const IntroCar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
         />
         <span className="absolute sm:-right-6 lg:-right-8 sm:-bottom-12 lg:-bottom-16 block text-primary font-medium">
           PPF
-          <span className="text-foreground font-medium block ">Door</span>
+          <span className="text-foreground font-medium block ">Doors</span>
         </span>
       </motion.div>
     </motion.section>

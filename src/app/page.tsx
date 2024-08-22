@@ -17,6 +17,8 @@ export default function Home() {
       <GallerySection />
       <InquireSection />
       <ContactSection />
+      <br />
+      <br />
       <FooterSection />
     </main>
   );

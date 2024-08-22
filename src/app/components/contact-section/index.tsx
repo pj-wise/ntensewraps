@@ -17,8 +17,8 @@ export const ContactSection = () => {
 
   return (
     <div id="contact" className="w-full layoutPadding py-">
-      <h1 className="text-3xl sm:text-5xl text-center py-8">Contact Us</h1>
-      <div className="flex flex-col md:flex-row gap-5 justify-between text-background max-w-screen-format w-full tracking-wide rounded px-7 md:px-14 py-4 min-h-[318px] bg-white">
+      <h1 className="text-3xl font-bold sm:text-5xl text-center py-8">CONTACT US</h1>
+      <div className="flex flex-col md:flex-row gap-5 justify-between text-background max-w-screen-format w-full tracking-wide rounded px-7 md:px-14 py-4 min-h-[318px] bg-[#040404] text-white">
         <form
           name="contact"
           action="/success"
@@ -68,14 +68,14 @@ export const ContactSection = () => {
             Location
           </h3>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.630686921947!2d-80.4118355!3d27.262109799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88deeaff37cd6b3f%3A0xf5f008babf907288!2s2682%20SW%20Domina%20Rd%2C%20Port%20St.%20Lucie%2C%20FL%2034953%2C%20USA!5e0!3m2!1sen!2sph!4v1716884579141!5m2!1sen!2sph"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3545.220122204017!2d-80.3055951238962!3d27.306298743064577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88def172fd67a40d%3A0x523d1b5faee694a!2sNtense%20Wraps!5e0!3m2!1sen!2s!4v1724362625629!5m2!1sen!2s"
             className="h-[197px]"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <p className="text-center text-primary font-medium text-sm max-w-[240px] mx-auto">
-            2682 SW Domina Rd, Port St. Lucie, FL 34953, United States
+          1593 SE Village Green Dr #10, Port St. Lucie, FL 34952, United States
           </p>
 
           <p className="text-center text-xs">

@@ -16,27 +16,18 @@ export const GallerySection = () => {
     ppf: "ppf" as CategoryType,
     vinylWraps: "vinyl wraps" as CategoryType,
     ceramicCoating: "Ceramic Coating" as CategoryType,
-    windowTints: "window tints" as CategoryType,
+    //windowTints: "window tints" as CategoryType,
   };
   const gallery = [
-    { imgSrc: "/img/gallery/gallery-1.jpg", category: CATEGORIES.ppf },
-    { imgSrc: "/img/gallery/gallery-2.jpg", category: CATEGORIES.ppf },
-    { imgSrc: "/img/gallery/gallery-3.jpg", category: CATEGORIES.ppf },
-    {
-      imgSrc: "/img/gallery/gallery-4.jpg",
-      category: CATEGORIES.ceramicCoating,
-    },
-    { imgSrc: "/img/gallery/gallery-5.jpg", category: CATEGORIES.windowTints },
-    {
-      imgSrc: "/img/gallery/gallery-6.jpg",
-      category: CATEGORIES.ceramicCoating,
-    },
-    { imgSrc: "/img/gallery/gallery-7.jpg", category: CATEGORIES.ppf },
-    { imgSrc: "/img/gallery/gallery-8.jpg", category: CATEGORIES.ppf },
-    { imgSrc: "/img/gallery/gallery-9.jpg", category: CATEGORIES.vinylWraps },
-    { imgSrc: "/img/gallery/gallery-10.jpg", category: CATEGORIES.vinylWraps },
-    { imgSrc: "/img/gallery/gallery-11.jpg", category: CATEGORIES.windowTints },
-    { imgSrc: "/img/gallery/gallery-12.jpg", category: CATEGORIES.vinylWraps },
+    { imgSrc: "/img/gallery/gallery-1.jpg", category: CATEGORIES.vinylWraps },
+    { imgSrc: "/img/gallery/gallery-2.jpeg", category: CATEGORIES.vinylWraps },
+    { imgSrc: "/img/gallery/gallery-3.jpeg", category: CATEGORIES.vinylWraps },
+    { imgSrc: "/img/gallery/gallery-4.jpeg", category: CATEGORIES.vinylWraps },
+    { imgSrc: "/img/gallery/gallery-5.jpeg", category: CATEGORIES.ppf },
+    { imgSrc: "/img/gallery/gallery-6.jpeg", category: CATEGORIES.ppf },
+    { imgSrc: "/img/gallery/gallery-7.jpeg", category: CATEGORIES.vinylWraps },
+    { imgSrc: "/img/gallery/gallery-8.jpeg", category: CATEGORIES.vinylWraps },
+    { imgSrc: "/img/gallery/gallery-9.jpeg", category: CATEGORIES.ceramicCoating },
   ];
   const [filteredGallery, setFilteredGallery] = useState([...gallery]);
   const [category, setCategory] = useState<CategoryType>(
@@ -88,11 +79,12 @@ export const GallerySection = () => {
 
 export const GalleryItem = ({ imgSrc }: GalleryItemProps) => {
   return (
-    <div className="relative overflow-hidden rounded-lg aspect-[5/4]">
-      <Image src={imgSrc} alt="Image Item" fill className="object-fill" />;
+    <div className="relative overflow-hidden rounded-lg aspect-square">
+      <Image src={imgSrc} alt="Image Item" fill className="object-cover" />
     </div>
   );
 };
+
 export interface GalleryItemProps {
   imgSrc: string;
 }

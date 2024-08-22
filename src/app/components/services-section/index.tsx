@@ -31,7 +31,7 @@ export const ServicesSection = () => {
           return (
             <ServiceItem
               key={`service-${index}`}
-              isSeeMore={index === 0}
+              isSeeMore={false}
               title={title}
               imgSrc={imgSrc}
             />
