@@ -30,23 +30,26 @@ export const ContactSection = () => {
             label="Name"
             {...register("name")}
             placeholder="Enter your name"
+            className="text-black"
           />
           <Input
             label="Email"
             {...register("email")}
             placeholder="Enter your email"
+             className="text-black"
           />
           <Input
             label="Phone Number"
             {...register("phoneNumber")}
             placeholder="Enter your number"
+             className="text-black"
           />
           <div className="flex flex-col gap-y-1">
             <label className="text-lg font-medium capitalize">Message</label>
             <textarea
               {...register("message")}
               placeholder="Enter your message"
-              className="w-full md:max-w-[354px] placeholder:text-[hsla(0,0%,38%,1)] placeholder:text-sm placeholder:tracking-wider p-1 px-3 bg-[hsla(0,0%,94%,1)] rounded resize-none"
+              className="w-full md:max-w-[354px] text-black placeholder:text-[hsla(0,0%,38%,1)] placeholder:text-sm placeholder:tracking-wider p-1 px-3 bg-[hsla(0,0%,94%,1)] rounded resize-none"
             ></textarea>
           </div>
           <button
