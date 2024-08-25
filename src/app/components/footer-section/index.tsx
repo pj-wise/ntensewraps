@@ -19,9 +19,6 @@ export const FooterSection = () => {
               <Link href="#services">Services</Link>
             </li>
             <li className="hover:underline">
-              <Link href="#">Pricing</Link>
-            </li>
-            <li className="hover:underline">
               <Link href="#about">About</Link>
             </li>
           </ul>
@@ -34,7 +31,7 @@ export const FooterSection = () => {
               <Link href="#contact">Call us</Link>
             </li>
             <li className="hover:underline">
-              <Link href="#contact">Contact form</Link>
+              <Link href="#contact">Contact Form</Link>
             </li>
             <li className="hover:underline">
               <Link href="#contact">Email us</Link>
@@ -49,16 +46,10 @@ export const FooterSection = () => {
           <h4 className="text-primary text-xl font-medium">Social Media</h4>
           <ul className="text-base flex flex-col gap-y-2 font-medium tracking-wider">
             <li className="hover:underline pt-6">
-              <Link href="#">Facebook</Link>
+              <Link href="https://www.facebook.com/ntensewraps/">Facebook</Link>
             </li>
             <li className="hover:underline">
               <Link href="https://instagram.com/ntensecarwraps">Instagram</Link>
-            </li>
-            <li className="hover:underline">
-              <Link href="#">Twitter</Link>
-            </li>
-            <li className="hover:underline">
-              <Link href="#">Tiktok</Link>
             </li>
           </ul>
         </div>

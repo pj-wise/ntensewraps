@@ -42,9 +42,9 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          <button className="hover:bg-primary/90 transition-colors bg-primary text-primary-foreground font-normal h-fit  py-1.5 px-4 rounded">
+          <Link href="#contact" className="hover:bg-primary/90 transition-colors bg-primary text-primary-foreground font-normal h-fit  py-1.5 px-4 rounded">
             Get a quote
-          </button>
+          </Link>
         </div>
       </nav>
 
