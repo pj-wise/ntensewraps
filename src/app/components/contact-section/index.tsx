@@ -3,18 +3,19 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { contactSchema } from "@/types/contact";
-import React from "react";
+import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { useForm as useFormspreeForm } from "@formspree/react";
 
-const CONTACT_FORM_ID = process.env.NEXT_PUBLIC_CONTACT_FORM_ID || "";
-const SUBSCRIPTION_FORM_ID = process.env.NEXT_PUBLIC_SUBSCRIPTION_FORM_ID || "";
+const CONTACT_FORM_ID = "xqalwwjp";
+const SUBSCRIPTION_FORM_ID = "xqalwwjp";
 
 export const ContactSection = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
   });
@@ -22,6 +23,23 @@ export const ContactSection = () => {
   const [contactFormState, contactSubmit] = useFormspreeForm(CONTACT_FORM_ID);
   const [subscriptionFormState, subscriptionSubmit] =
     useFormspreeForm(SUBSCRIPTION_FORM_ID);
+
+  // Handle contact form success
+  useEffect(() => {
+    if (contactFormState.succeeded) {
+      alert("Thank you! Your message has been sent successfully.");
+      reset();
+      window.location.reload();
+    }
+  }, [contactFormState.succeeded, reset]);
+
+  // Handle subscription form success
+  useEffect(() => {
+    if (subscriptionFormState.succeeded) {
+      alert("Thank you for subscribing to our newsletter!");
+      window.location.reload();
+    }
+  }, [subscriptionFormState.succeeded]);
 
   return (
     <div id="contact" className="w-full layoutPadding py-">
