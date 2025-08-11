@@ -5,6 +5,10 @@ import { z } from "zod";
 import { contactSchema } from "@/types/contact";
 import React from "react";
 import { cn } from "@/lib/utils";
+import { useForm as useFormspreeForm } from "@formspree/react";
+
+const CONTACT_FORM_ID = process.env.NEXT_PUBLIC_CONTACT_FORM_ID || "";
+const SUBSCRIPTION_FORM_ID = process.env.NEXT_PUBLIC_SUBSCRIPTION_FORM_ID || "";
 
 export const ContactSection = () => {
   const {
@@ -15,15 +19,19 @@ export const ContactSection = () => {
     resolver: zodResolver(contactSchema),
   });
 
+  const [contactFormState, contactSubmit] = useFormspreeForm(CONTACT_FORM_ID);
+  const [subscriptionFormState, subscriptionSubmit] =
+    useFormspreeForm(SUBSCRIPTION_FORM_ID);
+
   return (
     <div id="contact" className="w-full layoutPadding py-">
-      <h1 className="text-3xl font-bold sm:text-5xl text-center py-8">CONTACT US</h1>
+      <h1 className="text-3xl font-bold sm:text-5xl text-center py-8">
+        CONTACT US
+      </h1>
       <div className="flex flex-col md:flex-row gap-5 justify-between text-background max-w-screen-format w-full tracking-wide rounded px-7 md:px-14 py-4 min-h-[318px] bg-[#040404] text-white">
         <form
           name="contact"
-          action="/success"
-          method="POST"
-          data-netlify={true}
+          onSubmit={contactSubmit}
           className="flex flex-col gap-y-1 w-full md:max-w-[354px]"
         >
           <Input
@@ -36,13 +44,13 @@ export const ContactSection = () => {
             label="Email"
             {...register("email")}
             placeholder="Enter your email"
-             className="text-black"
+            className="text-black"
           />
           <Input
             label="Phone Number"
             {...register("phoneNumber")}
             placeholder="Enter your number"
-             className="text-black"
+            className="text-black"
           />
           <div className="flex flex-col gap-y-1">
             <label className="text-lg font-medium capitalize">Message</label>
@@ -54,17 +62,16 @@ export const ContactSection = () => {
           </div>
           <button
             type="submit"
+            disabled={contactFormState.submitting}
             className="bg-primary w-fit mt-3 ml-auto px-7 py-1 drop-shadow-lg text-background font-medium rounded"
           >
-            Submit
+            {contactFormState.submitting ? "Submitting..." : "Submit"}
           </button>
         </form>
 
         <form
           name="subscribe"
-          method="POST"
-          action="/success"
-          data-netlify={true}
+          onSubmit={subscriptionSubmit}
           className="md:max-w-[354px] w-full flex flex-col gap-y-2"
         >
           <h3 className="text-base sm:text-lg text-center font-medium">
@@ -78,7 +85,8 @@ export const ContactSection = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <p className="text-center text-primary font-medium text-sm max-w-[240px] mx-auto">
-          1593 SE Village Green Dr #10, Port St. Lucie, FL 34952, United States
+            1593 SE Village Green Dr #10, Port St. Lucie, FL 34952, United
+            States
           </p>
 
           <p className="text-center text-xs">
@@ -94,9 +102,10 @@ export const ContactSection = () => {
             />
             <button
               type="submit"
+              disabled={subscriptionFormState.submitting}
               className="text-base rounded px-5 py-1 font-medium"
             >
-              Send
+              {subscriptionFormState.submitting ? "Sending..." : "Send"}
             </button>
           </div>
         </form>
