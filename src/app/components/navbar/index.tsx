@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { HamburgerMenu, MenuBody } from "../hamburger-menu";
 import { useEffect, useState } from "react";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu"
+import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils";
 
 export const Navbar = () => {
@@ -20,7 +22,7 @@ export const Navbar = () => {
   }, [showMenu]);
   return (
     <>
-      <nav className="hidden z-[999] lg:flex justify-between items-center bg-background left-0 right-0 absolute py-5 layoutPadding">
+      <nav className="hidden z-[100] lg:flex justify-between items-center bg-background left-0 right-0 absolute py-5 layoutPadding">
         <div className="w-full max-w-screen-format lg:flex justify-between items-center">
           <h2 className="font-bold text-5xl text-primary">NW</h2>
 
@@ -31,9 +33,62 @@ export const Navbar = () => {
             <Link href="#about" className={linkClassName}>
               About
             </Link>
-            <Link href="#services" className={linkClassName}>
+            <DropdownMenu>
+            <DropdownMenuTrigger className={`${linkClassName} flex items-center gap-1 outline-none z-[200]`}>
               Services
-            </Link>
+              <ChevronDown className="h-4 w-4 text-white" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-black border-yellow-400/20 min-w-[280px] z-[200]">
+              <DropdownMenuItem asChild>
+                <Link
+                  href="/vinyl-wrap"
+                  className="text-white hover:text-yellow-400 hover:bg-yellow-400/10 cursor-pointer"
+                >
+                  Vinyl Wrap
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link
+                  href="/ppf"
+                  className="text-white hover:text-yellow-400 hover:bg-yellow-400/10 cursor-pointer"
+                >
+                  Paint Protection Film (PPF)
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link
+                  href="/services/ceramic-coating"
+                  className="text-white hover:text-yellow-400 hover:bg-yellow-400/10 cursor-pointer"
+                >
+                  Ceramic Coating
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link
+                  href="/architectural-wraps"
+                  className="text-white hover:text-yellow-400 hover:bg-yellow-400/10 cursor-pointer"
+                >
+                  Architectural & Appliance Wraps
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link
+                  href="/commercial-wraps"
+                  className="text-white hover:text-yellow-400 hover:bg-yellow-400/10 cursor-pointer"
+                >
+                  Commercial Wraps & Design
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link
+                  href="/web-design"
+                  className="text-white hover:text-yellow-400 hover:bg-yellow-400/10 cursor-pointer"
+                >
+                  Business Landing Page Design
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
             <Link href="#gallery" className={linkClassName}>
               Gallery
             </Link>
