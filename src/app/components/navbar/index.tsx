@@ -57,7 +57,7 @@ export const Navbar = () => {
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link
-                  href="/services/ceramic-coating"
+                  href="/ceramic-coating"
                   className="text-white hover:text-yellow-400 hover:bg-yellow-400/10 cursor-pointer"
                 >
                   Ceramic Coating
