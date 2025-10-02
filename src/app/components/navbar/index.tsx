@@ -33,7 +33,7 @@ export const Navbar = () => {
             <Link href="#about" className={linkClassName}>
               About
             </Link>
-            <DropdownMenu>
+            {/*<DropdownMenu>
             <DropdownMenuTrigger className={`${linkClassName} flex items-center gap-1 outline-none z-[200]`}>
               Services
               <ChevronDown className="h-4 w-4 text-white" />
@@ -88,7 +88,10 @@ export const Navbar = () => {
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu> */}
+            <Link href="#services" className={linkClassName}>
+              Services
+            </Link>
             <Link href="#gallery" className={linkClassName}>
               Gallery
             </Link>
