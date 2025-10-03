@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { clashDisplay } from "./fonts";
+import { Navbar } from "./components/navbar";
 
 export const metadata: Metadata = {
   title: "Ntense Car Wraps",
@@ -15,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={clashDisplay.className}>
-      <body className="bg-background text-foreground">{children}</body>
+      <body className="bg-background text-foreground">
+        <Navbar />
+          {children}
+          </body>
     </html>
   );
 }
