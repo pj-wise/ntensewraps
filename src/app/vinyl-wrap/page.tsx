@@ -52,7 +52,7 @@ export default function VinylWrapPage() {
             </div>
             <div>
               <img
-                src="/purple-wrapped-car-full-vehicle-wrap.jpg"
+                src="/img/car-img-4.webp"
                 alt="Professional vinyl wrap installation"
                 className="w-full h-[400px] object-cover rounded-lg"
               />
@@ -171,7 +171,7 @@ export default function VinylWrapPage() {
               </div>
               <div>
                 <img
-                  src="/bronze-wrapped-sports-car-color-change-wrap.jpg"
+                  src="/img/car-img-3.webp"
                   alt="Custom personal vehicle wrap"
                   className="w-full h-[350px] object-cover rounded-lg"
                 />

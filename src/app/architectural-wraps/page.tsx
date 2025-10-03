@@ -70,7 +70,7 @@ export default function ArchitecturalWrapsPage() {
             </div>
             <div>
               <img
-                src="/modern-kitchen-with-wrapped-stainless-steel-applia.jpg"
+                src="/img/ref-img-1.jpg"
                 alt="Wrapped kitchen appliances"
                 className="w-full h-[400px] object-cover rounded-lg"
               />
@@ -80,7 +80,7 @@ export default function ArchitecturalWrapsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/modern-office-with-vinyl-wrapped-accent-wall.jpg"
+                src="/img/boat-img-1.jpg"
                 alt="Architectural vinyl wrap"
                 className="w-full h-[400px] object-cover rounded-lg"
               />

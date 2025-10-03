@@ -51,7 +51,7 @@ export default function CeramicCoatingPage() {
             </div>
             <div>
               <img
-                src="/red-sports-car-with-glossy-ceramic-coating-shine.jpg"
+                src="/img/car-img-5.webp"
                 alt="Ceramic coating shine"
                 className="w-full h-[400px] object-cover rounded-lg"
               />

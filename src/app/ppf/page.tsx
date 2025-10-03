@@ -56,7 +56,7 @@ export default function PPFPage() {
             </div>
             <div>
               <img
-                src="/paint-protection-film-installation-on-luxury-car.jpg"
+                src="/img/car-img-1.webp"
                 alt="PPF installation"
                 className="w-full h-[400px] object-cover rounded-lg"
               />
