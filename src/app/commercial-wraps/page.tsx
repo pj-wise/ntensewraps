@@ -60,7 +60,7 @@ export default function CommercialWrapsPage() {
             </div>
             <div>
               <img
-                src="/commercial-van-with-professional-business-wrap-and.jpg"
+                src="/img/commercial-car-1.webp"
                 alt="Commercial vehicle wrap"
                 className="w-full h-[400px] object-cover rounded-lg"
               />
@@ -179,7 +179,7 @@ export default function CommercialWrapsPage() {
               </div>
               <div>
                 <img
-                  src="/fleet-of-branded-commercial-vehicles-with-wraps.jpg"
+                  src="/img/commercial-car-2.webp"
                   alt="Fleet wraps"
                   className="w-full h-[350px] object-cover rounded-lg"
                 />
