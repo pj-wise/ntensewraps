@@ -27,10 +27,10 @@ export const Navbar = () => {
           <h2 className="font-bold text-5xl text-primary">NW</h2>
 
           <div className="flex justify-evenly gap-6 transition-colors">
-            <Link href="#hero" className={linkClassName}>
+            <Link href="/#hero" className={linkClassName}>
               Home
             </Link>
-            <Link href="#about" className={linkClassName}>
+            <Link href="/#about" className={linkClassName}>
               About
             </Link>
             <DropdownMenu>
@@ -89,10 +89,10 @@ export const Navbar = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-            <Link href="#gallery" className={linkClassName}>
+            <Link href="/#gallery" className={linkClassName}>
               Gallery
             </Link>
-            <Link href="#contact" className={linkClassName}>
+            <Link href="/#contact" className={linkClassName}>
               Contact
             </Link>
           </div>

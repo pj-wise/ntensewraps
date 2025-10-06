@@ -15,7 +15,7 @@ export default function ArchitecturalWrapsPage() {
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-zinc-900 to-black">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl py-12 mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             <span className="text-yellow-400">ARCHITECTURAL</span> &<br />
             APPLIANCE WRAPS
