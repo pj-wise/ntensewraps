@@ -59,11 +59,13 @@ export default function WebDesignPage() {
               </div>
             </div>
             <div>
-              <img
-                src="/placeholder.svg?height=400&width=600"
+              <Link href="https://equinoxtinting.com/">
+                <img
+                src="/img/equinox-tint.png"
                 alt="Website design"
                 className="w-full h-[400px] object-cover rounded-lg"
-              />
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -181,22 +183,26 @@ export default function WebDesignPage() {
                 </ul>
               </div>
               <div>
-                <img
-                  src="/placeholder.svg?height=350&width=600"
-                  alt="Landing page design"
-                  className="w-full h-[350px] object-cover rounded-lg"
-                />
+                <Link href="https://boatcare360.com/">
+                  <img
+                    src="/img/boat360-landing.png"
+                    alt="Landing page design"
+                    className="w-full h-[350px] object-cover rounded-lg"
+                  />
+                </Link>
               </div>
             </div>
 
             {/* Multi-Page Websites */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <img
-                  src="/placeholder.svg?height=350&width=600"
-                  alt="Multi-page website"
-                  className="w-full h-[350px] object-cover rounded-lg"
-                />
+                <Link href="https://www.alldogshouston.com/">
+                  <img
+                    src="/img/alldogs-homepage.png"
+                    alt="Multi-page website"
+                    className="w-full h-[350px] object-cover rounded-lg"
+                  />
+                </Link>
               </div>
               <div className="space-y-6 order-1 lg:order-2">
                 <h3 className="text-2xl sm:text-3xl font-bold">
@@ -260,11 +266,14 @@ export default function WebDesignPage() {
                 </ul>
               </div>
               <div>
-                <img
-                  src="/placeholder.svg?height=350&width=600"
-                  alt="E-commerce website"
-                  className="w-full h-[350px] object-cover rounded-lg"
-                />
+                <Link href="https://www.accdogs.com/">
+                  <img
+                    src="/img/acc-courses.png"
+                    alt="E-commerce website"
+                    className="w-full h-[350px] object-cover rounded-lg"
+                  />
+                </Link>
+
               </div>
             </div>
           </div>
