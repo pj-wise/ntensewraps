@@ -48,7 +48,7 @@ export default function CommercialWrapsPage() {
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 Commercial vehicle wraps are one of the most cost-effective forms of advertising available. With a
                 single investment, your brand reaches thousands of potential customers every day, generating impressions
-                that traditional advertising can't match.
+                that traditional advertising can&apos;t match.
               </p>
               <div className="bg-zinc-900 border border-yellow-400 rounded-lg p-6">
                 <p className="text-yellow-400 font-bold text-xl mb-2">Did You Know?</p>
@@ -122,7 +122,7 @@ export default function CommercialWrapsPage() {
                 <Shield className="w-12 h-12 text-yellow-400" />
                 <h3 className="text-xl font-bold text-white">Vehicle Protection</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Protect your fleet's paint from scratches and wear while advertising your business.
+                  Protect your fleet&apos;s paint from scratches and wear while advertising your business.
                 </p>
               </CardContent>
             </Card>
@@ -277,7 +277,7 @@ export default function CommercialWrapsPage() {
                 </h3>
                 <p className="text-gray-300 text-lg leading-relaxed">
                   In addition to vehicle wraps, we offer storefront signage solutions, including window graphics and
-                  perforated vinyl. These are excellent ways to attract foot traffic and improve your business's curb
+                  perforated vinyl. These are excellent ways to attract foot traffic and improve your business&apos;s curb
                   appeal.
                 </p>
                 <ul className="space-y-3">
@@ -384,7 +384,7 @@ export default function CommercialWrapsPage() {
             <Card className="bg-zinc-900 border-zinc-800">
               <CardContent className="pt-6 space-y-3">
                 <h3 className="text-xl font-bold text-yellow-400">
-                  What's the difference between a full wrap and a partial wrap?
+                  What&apos;s the difference between a full wrap and a partial wrap?
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
                   A full wrap covers the entire vehicle, while a partial wrap only covers certain areas like doors or
@@ -417,7 +417,7 @@ export default function CommercialWrapsPage() {
                 <h3 className="text-xl font-bold text-yellow-400">Do you offer design services?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Our in-house design team creates custom designs tailored to your brand, complete with free mockups and
-                  revisions until you're satisfied.
+                  revisions until you&apos;re satisfied.
                 </p>
               </CardContent>
             </Card>
@@ -432,7 +432,7 @@ export default function CommercialWrapsPage() {
             READY TO GROW YOUR <span className="text-yellow-400">BUSINESS?</span>
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed">
-            Contact us today for a free consultation and design mockup. Let's turn your fleet into a powerful marketing
+            Contact us today for a free consultation and design mockup. Let&apos;s turn your fleet into a powerful marketing
             tool!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

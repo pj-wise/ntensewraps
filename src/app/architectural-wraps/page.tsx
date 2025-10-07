@@ -308,7 +308,7 @@ export default function ArchitecturalWrapsPage() {
               <CardContent className="pt-6 space-y-3">
                 <h3 className="text-xl font-bold text-yellow-400">Can wraps be applied to any surface?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Most smooth, non-porous surfaces can be wrapped, including metal, plastic, wood, and glass. We'll
+                  Most smooth, non-porous surfaces can be wrapped, including metal, plastic, wood, and glass. We&apos;ll
                   assess your specific surfaces during consultation.
                 </p>
               </CardContent>
@@ -328,7 +328,7 @@ export default function ArchitecturalWrapsPage() {
               <CardContent className="pt-6 space-y-3">
                 <h3 className="text-xl font-bold text-yellow-400">How do I clean and maintain wrapped surfaces?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Simply wipe with a damp cloth and mild soap. Avoid abrasive cleaners and scrubbing pads. We'll provide
+                  Simply wipe with a damp cloth and mild soap. Avoid abrasive cleaners and scrubbing pads. We&apos;ll provide
                   detailed care instructions after installation.
                 </p>
               </CardContent>

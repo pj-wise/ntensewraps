@@ -42,12 +42,12 @@ export default function WebDesignPage() {
                 YOUR BUSINESS DESERVES A <span className="text-yellow-400">DIGITAL HOME</span>
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                In today's digital world, your website is often the first impression potential customers have of your
+                In today&apos;s digital world, your website is often the first impression potential customers have of your
                 business. A professional, well-designed website establishes credibility, showcases your work, and makes
                 it easy for customers to contact you.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Whether you're a contractor, service provider, or retail business, we create custom landing pages that
+                Whether you&apos;re a contractor, service provider, or retail business, we create custom landing pages that
                 highlight your unique value proposition and convert visitors into customers.
               </p>
               <div className="bg-zinc-900 border border-yellow-400 rounded-lg p-6">
@@ -75,7 +75,7 @@ export default function WebDesignPage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-zinc-900">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-            WHAT'S <span className="text-yellow-400">INCLUDED</span>
+            WHAT&apos;S <span className="text-yellow-400">INCLUDED</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-black border-zinc-800">
@@ -382,7 +382,7 @@ export default function WebDesignPage() {
                 <h3 className="text-xl font-bold text-yellow-400">What if I need changes after launch?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   We offer ongoing support and maintenance packages to keep your site updated, secure, and running
-                  smoothly. We're always here to help with changes and improvements.
+                  smoothly. We&apos;re always here to help with changes and improvements.
                 </p>
               </CardContent>
             </Card>
@@ -397,7 +397,7 @@ export default function WebDesignPage() {
             READY TO BUILD YOUR <span className="text-yellow-400">ONLINE PRESENCE?</span>
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed">
-            Contact us today to discuss your website project. Let's create a digital experience that drives results for
+            Contact us today to discuss your website project. Let&apos;s create a digital experience that drives results for
             your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

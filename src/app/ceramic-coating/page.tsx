@@ -20,8 +20,8 @@ export default function CeramicCoatingPage() {
             <span className="text-yellow-400">CERAMIC COATING</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Ceramic coating is the newest and most advanced way to protect your car's finish. We offer a variety of
-            ceramic coatings that will take your car's finish to a whole new level with ultimate protection and shine.
+            Ceramic coating is the newest and most advanced way to protect your car&apos;s finish. We offer a variety of
+            ceramic coatings that will take your car&apos;s finish to a whole new level with ultimate protection and shine.
           </p>
           <Link href="/#contact">
             <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-6 text-lg">
@@ -45,7 +45,7 @@ export default function CeramicCoatingPage() {
                 layer against UV rays, dirt, and minor scratches.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                We specialize in preserving the beauty and longevity of your car's paintwork, ensuring it looks brand
+                We specialize in preserving the beauty and longevity of your car&apos;s paintwork, ensuring it looks brand
                 new for years to come.
               </p>
             </div>
@@ -68,13 +68,13 @@ export default function CeramicCoatingPage() {
           </h2>
           <div className="max-w-4xl mx-auto space-y-6">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Ceramic coating is a liquid polymer applied to a car's exterior that chemically bonds with the factory
-              paint, forming a durable protective layer. Unlike traditional wax, ceramic coating doesn't wash off or
+              Ceramic coating is a liquid polymer applied to a car&apos;s exterior that chemically bonds with the factory
+              paint, forming a durable protective layer. Unlike traditional wax, ceramic coating doesn&apos;t wash off or
               break down, making it an excellent long-term investment for car protection.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               This coating provides resistance to UV rays, water, dirt, and other environmental contaminants that could
-              harm your vehicle's paint. The result is a stunning, mirror-like finish that's easier to maintain and
+              harm your vehicle&apos;s paint. The result is a stunning, mirror-like finish that&apos;s easier to maintain and
               lasts for years.
             </p>
           </div>
@@ -123,7 +123,7 @@ export default function CeramicCoatingPage() {
                 <Sparkles className="w-12 h-12 text-yellow-400" />
                 <h3 className="text-xl font-bold text-white">High-Gloss Finish</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Creates a beautiful, reflective shine that enhances the look and depth of your vehicle's color.
+                  Creates a beautiful, reflective shine that enhances the look and depth of your vehicle&apos;s color.
                 </p>
               </CardContent>
             </Card>
@@ -168,7 +168,7 @@ export default function CeramicCoatingPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white">Detailed Cleaning</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Thoroughly wash and decontaminate the car's exterior to remove any dirt, grease, or residues.
+                  Thoroughly wash and decontaminate the car&apos;s exterior to remove any dirt, grease, or residues.
                 </p>
               </CardContent>
             </Card>
@@ -210,7 +210,7 @@ export default function CeramicCoatingPage() {
             </Card>
           </div>
           <p className="text-center text-gray-300 text-lg mt-12 leading-relaxed">
-            This process results in a smooth, ultra-glossy finish that's built to withstand the elements.
+            This process results in a smooth, ultra-glossy finish that&apos;s built to withstand the elements.
           </p>
         </div>
       </section>
@@ -260,7 +260,7 @@ export default function CeramicCoatingPage() {
                 <Sparkles className="w-12 h-12 text-yellow-400 mx-auto" />
                 <h3 className="text-xl font-bold text-white">Customer Satisfaction</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Our commitment to excellence and customer service ensures you'll drive away happy.
+                  Our commitment to excellence and customer service ensures you&apos;ll drive away happy.
                 </p>
               </CardContent>
             </Card>
@@ -299,7 +299,7 @@ export default function CeramicCoatingPage() {
               <CardContent className="pt-6 space-y-3">
                 <h3 className="text-xl font-bold text-yellow-400">Will ceramic coating prevent all scratches?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Ceramic coating provides excellent protection against minor scratches and swirl marks, but it's not
+                  Ceramic coating provides excellent protection against minor scratches and swirl marks, but it&apos;s not
                   completely scratch-proof. For maximum protection against rock chips and deeper scratches, consider
                   combining it with PPF.
                 </p>
@@ -311,7 +311,7 @@ export default function CeramicCoatingPage() {
                 <h3 className="text-xl font-bold text-yellow-400">How do I maintain my ceramic coating?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Regular washing with pH-neutral soap and avoiding automatic car washes will help maintain your ceramic
-                  coating. We'll provide detailed care instructions after installation.
+                  coating. We&apos;ll provide detailed care instructions after installation.
                 </p>
               </CardContent>
             </Card>
@@ -326,7 +326,7 @@ export default function CeramicCoatingPage() {
             READY TO PROTECT YOUR <span className="text-yellow-400">VEHICLE?</span>
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed">
-            Contact us today for a consultation and discover how ceramic coating can transform your car's appearance and
+            Contact us today for a consultation and discover how ceramic coating can transform your car&apos;s appearance and
             protection.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -20,7 +20,7 @@ export default function VinylWrapPage() {
             <span className="text-yellow-400">VINYL WRAP</span> SERVICES
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Transform your vehicle with high-quality vinyl wraps. Whether you're looking for a striking design for your
+            Transform your vehicle with high-quality vinyl wraps. Whether you&apos;re looking for a striking design for your
             personal car or need your company logo prominently featured on a commercial vehicle, our expert team
             delivers the perfect wrap that meets all of your needs.
           </p>
@@ -41,7 +41,7 @@ export default function VinylWrapPage() {
                 WHAT IS <span className="text-yellow-400">VINYL WRAP?</span>
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Vinyl wrapping is the process of applying a thin, durable vinyl film to your vehicle's exterior. Unlike
+                Vinyl wrapping is the process of applying a thin, durable vinyl film to your vehicle&apos;s exterior. Unlike
                 traditional paint, vinyl wraps are completely reversible and provide excellent protection for your
                 original paint while allowing for unlimited customization options.
               </p>
@@ -147,7 +147,7 @@ export default function VinylWrapPage() {
                 </h3>
                 <p className="text-gray-300 text-lg leading-relaxed">
                   Want to stand out on the road? Our custom wraps allow you to completely transform the look of your
-                  vehicle. Whether you're changing colors or adding unique accents, our vinyl wraps provide the perfect
+                  vehicle. Whether you&apos;re changing colors or adding unique accents, our vinyl wraps provide the perfect
                   way to express your style and make your vehicle one-of-a-kind.
                 </p>
                 <ul className="space-y-3">
@@ -245,7 +245,7 @@ export default function VinylWrapPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white">Surface Preparation</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Thorough cleaning and decontamination of your vehicle's surface to ensure perfect adhesion.
+                  Thorough cleaning and decontamination of your vehicle&apos;s surface to ensure perfect adhesion.
                 </p>
               </CardContent>
             </Card>
@@ -269,7 +269,7 @@ export default function VinylWrapPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white">Quality Inspection</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Final inspection and detailing to ensure every edge is perfect and you're completely satisfied.
+                  Final inspection and detailing to ensure every edge is perfect and you&apos;re completely satisfied.
                 </p>
               </CardContent>
             </Card>
@@ -336,7 +336,7 @@ export default function VinylWrapPage() {
             READY TO TRANSFORM YOUR <span className="text-yellow-400">VEHICLE?</span>
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed">
-            Contact us today for a free consultation and custom quote. Let's bring your vision to life!
+            Contact us today for a free consultation and custom quote. Let&apos;s bring your vision to life!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact">

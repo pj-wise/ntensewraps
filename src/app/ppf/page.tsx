@@ -43,13 +43,13 @@ export default function PPFPage() {
                 ULTIMATE <span className="text-yellow-400">PROTECTION</span> FOR YOUR VEHICLE
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Looking for the best way to protect your car's paint from chips, scratches, and road debris? Our Paint
+                Looking for the best way to protect your car&apos;s paint from chips, scratches, and road debris? Our Paint
                 Protection Film (PPF) installation offers unmatched durability and a virtually invisible shield to keep
                 your vehicle looking brand new.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
                 PPF, also known as a <span className="text-yellow-400 font-semibold">clear bra</span>, is a
-                high-performance, self-healing film designed to safeguard your vehicle's exterior from everyday wear and
+                high-performance, self-healing film designed to safeguard your vehicle&apos;s exterior from everyday wear and
                 tear. Unlike traditional wax or ceramic coatings, PPF provides physical protection against impact
                 damage, making it the best choice for long-term preservation.
               </p>
@@ -127,7 +127,7 @@ export default function PPFPage() {
                 <Shield className="w-12 h-12 text-yellow-400" />
                 <h3 className="text-xl font-bold text-white">Maintains Resale Value</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Preserves your vehicle's original paint, ensuring higher resale value.
+                  Preserves your vehicle&apos;s original paint, ensuring higher resale value.
                 </p>
               </CardContent>
             </Card>
@@ -214,7 +214,7 @@ export default function PPFPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white">Paint Surface Preparation</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Deep-clean and polish your car's paint to remove contaminants for optimal adhesion.
+                  Deep-clean and polish your car&apos;s paint to remove contaminants for optimal adhesion.
                 </p>
               </CardContent>
             </Card>
@@ -303,8 +303,8 @@ export default function PPFPage() {
               <CardContent className="pt-6 space-y-3">
                 <h3 className="text-xl font-bold text-yellow-400">What is Paint Protection Film (PPF)?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  PPF is a clear, durable film applied to your vehicle's paint to protect it from scratches, chips, and
-                  other environmental damage. It helps preserve the car's finish, ensuring it looks brand new for years.
+                  PPF is a clear, durable film applied to your vehicle&apos;s paint to protect it from scratches, chips, and
+                  other environmental damage. It helps preserve the car&apos;s finish, ensuring it looks brand new for years.
                 </p>
               </CardContent>
             </Card>
@@ -313,7 +313,7 @@ export default function PPFPage() {
               <CardContent className="pt-6 space-y-3">
                 <h3 className="text-xl font-bold text-yellow-400">How long does Paint Protection Film last?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  PPF typically lasts 5-10 years, depending on the quality of the film and how well it's maintained. Our
+                  PPF typically lasts 5-10 years, depending on the quality of the film and how well it&apos;s maintained. Our
                   high-quality films are designed to provide long-lasting protection and retain their clarity.
                 </p>
               </CardContent>
@@ -326,7 +326,7 @@ export default function PPFPage() {
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
                   No, the film is nearly invisible, providing protection without altering the appearance of your car. It
-                  enhances the paint's color depth and gloss, giving your vehicle a flawless finish.
+                  enhances the paint&apos;s color depth and gloss, giving your vehicle a flawless finish.
                 </p>
               </CardContent>
             </Card>
