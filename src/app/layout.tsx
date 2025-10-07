@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   title: "Ntense Car Wraps",
   description:
     "Ntense Wraps: We make your car look amazing! Full and partial commercial wraps, color change wraps, cosmetic paint protection film (PPF), interior/exterior detailing, paint correction, and taillight/headlight tinting.",
+  openGraph: {
+    title: "Ntense Car Wraps",
+    images: [
+      {
+        url: "/img/site-logo.png",
+        width: 800,
+        height: 800,
+        alt: "Ntense Logo"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
