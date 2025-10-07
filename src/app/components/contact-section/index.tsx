@@ -96,15 +96,14 @@ export const ContactSection = () => {
             Location
           </h3>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3545.220122204017!2d-80.3055951238962!3d27.306298743064577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88def172fd67a40d%3A0x523d1b5faee694a!2sNtense%20Wraps!5e0!3m2!1sen!2s!4v1724362625629!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.948521730691!2d-80.38696591938466!3d27.25214381571528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88def172fd67a40d%3A0x523d1b5faee694a!2sNtense%20Wraps%2C%20PPF%20%26%20Ceramic%20Coating!5e0!3m2!1sen!2sph!4v1759492564597!5m2!1sen!2sph"
             className="h-[197px]"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <p className="text-center text-primary font-medium text-sm max-w-[240px] mx-auto">
-            1593 SE Village Green Dr #10, Port St. Lucie, FL 34952, United
-            States
+            1066 SW Cornelia Ave, Port St. Lucie, FL 34953, United States
           </p>
 
           <p className="text-center text-xs">
