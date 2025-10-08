@@ -22,7 +22,7 @@ export const MenuBody = (props: { showMenu: boolean; className?: string }) => {
   const linkClassName =
     "py-5 border-b-[0.5px] border-muted-foreground link hover:gradientNtense gradientClipText bg-foreground transition-colors";
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden overflow-auto">
       <motion.div
         variants={{
           hidden: { y: "100%", opacity: 0, display: "none" },
@@ -31,7 +31,7 @@ export const MenuBody = (props: { showMenu: boolean; className?: string }) => {
         animate={showMenu ? "show" : "hidden"}
         transition={{ ease: "easeInOut", duration: 0.5 }}
         className={cn(
-          "flex flex-col z-[999] absolute top-24 left-0 right-0 bottom-0 bg-black text-foreground layoutPadding",
+          "flex flex-col z-[999] absolute top-24 left-0 right-0 bottom-0 bg-black text-foreground layoutPadding overflow-y-auto",
           props.className
         )}
       >
@@ -41,8 +41,23 @@ export const MenuBody = (props: { showMenu: boolean; className?: string }) => {
         <Link href="#home" className={cn(linkClassName)}>
           About
         </Link>
-        <Link href="#home" className={cn(linkClassName)}>
-          Services
+        <Link href="/vinyl-wrap" className={cn(linkClassName)}>
+          Vinyl Wrap
+        </Link>
+        <Link href="/ppf" className={cn(linkClassName)}>
+          Paint Protection Film (PPF)
+        </Link>
+        <Link href="/ceramic-coating" className={cn(linkClassName)}>
+          Ceramic Coating
+        </Link>
+        <Link href="/architectural-wraps" className={cn(linkClassName)}>
+          Architectural & Appliance Wraps
+        </Link>
+        <Link href="/commercial-wraps" className={cn(linkClassName)}>
+          Commercial Wraps & Design
+        </Link>
+        <Link href="/web-design" className={cn(linkClassName)}>
+          Business Landing Page Design
         </Link>
         <Link href="#home" className={cn(linkClassName)}>
           Gallery
