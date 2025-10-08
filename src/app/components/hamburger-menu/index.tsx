@@ -17,8 +17,8 @@ export const HamburgerMenu = (props: { onClick?: () => void }) => {
   );
 };
 
-export const MenuBody = (props: { showMenu: boolean; className?: string }) => {
-  const { showMenu } = props;
+export const MenuBody = (props: { showMenu: boolean; className?: string; setShowMenu: (showMenu: boolean) => void }) => {
+  const { showMenu, setShowMenu } = props;
   const linkClassName =
     "py-5 border-b-[0.5px] border-muted-foreground link hover:gradientNtense gradientClipText bg-foreground transition-colors";
   return (
@@ -35,34 +35,34 @@ export const MenuBody = (props: { showMenu: boolean; className?: string }) => {
           props.className
         )}
       >
-        <Link href="#home" className={cn(linkClassName)}>
+        <Link href="/" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Home
         </Link>
-        <Link href="#home" className={cn(linkClassName)}>
+        <Link href="/#about" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           About
         </Link>
-        <Link href="/vinyl-wrap" className={cn(linkClassName)}>
+        <Link href="/vinyl-wrap" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Vinyl Wrap
         </Link>
-        <Link href="/ppf" className={cn(linkClassName)}>
+        <Link href="/ppf" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Paint Protection Film (PPF)
         </Link>
-        <Link href="/ceramic-coating" className={cn(linkClassName)}>
+        <Link href="/ceramic-coating" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Ceramic Coating
         </Link>
-        <Link href="/architectural-wraps" className={cn(linkClassName)}>
+        <Link href="/architectural-wraps" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Architectural & Appliance Wraps
         </Link>
-        <Link href="/commercial-wraps" className={cn(linkClassName)}>
+        <Link href="/commercial-wraps" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Commercial Wraps & Design
         </Link>
-        <Link href="/web-design" className={cn(linkClassName)}>
+        <Link href="/web-design" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Business Landing Page Design
         </Link>
-        <Link href="#home" className={cn(linkClassName)}>
+        <Link href="/#gallery" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Gallery
         </Link>
-        <Link href="#home" className={cn(linkClassName)}>
+        <Link href="/#contact" className={cn(linkClassName)} onClick={() => setShowMenu(false)}>
           Contact
         </Link>
       </motion.div>
