@@ -51,6 +51,7 @@ export const Navbar = () => {
                 <Link
                   href="/ppf"
                   className="text-white hover:text-yellow-400 hover:bg-yellow-400/10 cursor-pointer"
+                  onClick={() => setShowMenu(false)}
                 >
                   Paint Protection Film (PPF)
                 </Link>
@@ -114,7 +115,7 @@ export const Navbar = () => {
           <HamburgerMenu onClick={() => setShowMenu((bool) => !bool)} />
         </div>
       </nav>
-      <MenuBody showMenu={showMenu} />
+      <MenuBody showMenu={showMenu} setShowMenu={setShowMenu} />
     </>
   );
 };
