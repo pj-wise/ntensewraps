@@ -3,6 +3,7 @@ import "./globals.css";
 import { clashDisplay } from "./fonts";
 import { Navbar } from "./components/navbar";
 import Script from "next/script"
+import { FooterSection } from "./components/footer-section";
 
 export const metadata: Metadata = {
   title: "Ntense Car Wraps",
@@ -72,6 +73,7 @@ export default function RootLayout({
         </noscript>
         <Navbar />
           {children}
+        <FooterSection />
       </body>
     </html>
   );
