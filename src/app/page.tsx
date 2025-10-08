@@ -17,7 +17,6 @@ export default function Home() {
       <ContactSection />
       <br />
       <br />
-      <FooterSection />
     </main>
   );
 }

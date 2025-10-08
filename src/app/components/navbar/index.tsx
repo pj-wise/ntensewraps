@@ -106,9 +106,11 @@ export const Navbar = () => {
       <nav className="flex z-[999] lg:hidden justify-between items-center bg-background left-0 right-0 absolute py-6 layoutPadding">
         <h2 className="font-bold text-5xl">NW</h2>
         <div className="flex items-center gap-3">
+          <Link href="/#contact">
           <button className="hover:bg-primary/90 transition-colors bg-primary text-primary-foreground font-normal h-fit  py-1.5 px-4 rounded">
             Get a quote
           </button>
+          </Link>
           <HamburgerMenu onClick={() => setShowMenu((bool) => !bool)} />
         </div>
       </nav>

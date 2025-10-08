@@ -1,23 +1,29 @@
 import Image from "next/image";
+import Link from "next/link";
+
 export const ServicesSection = () => {
   const services = [
     {
       title: "Full & Partial Commercial Wraps",
-      imgSrc: "/img/service/service-1.jpg",
+      imgSrc: "/img/commercial-car-1.webp",
+      href: "/commercial-wraps"
     },
     {
-      title: "Cosmetic Paint Protection",
-      imgSrc: "/img/service/service-2.jpg",
+      title: "Paint Protection Film (PPF)",
+      imgSrc: "/img/car-img-1.webp",
+      href: "/ppf"
     },
-    { title: "Color Change Wraps", imgSrc: "/img/service/service-3.jpg" },
+    { title: "Vinyl Wraps", imgSrc: "/img/red-car-1.webp", href: "/vinyl-wrap" },
     {
-      title: "Interior/Exterior Detailing",
-      imgSrc: "/img/service/service-4.jpg",
+      title: "Architectural & Appliance Wraps",
+      imgSrc: "/img/ref-img-1.jpg",
+      href: "/architectural-wraps"
     },
-    { title: "Paint Correction", imgSrc: "/img/service/service-5.jpg" },
+    { title: "Ceramic Coating", imgSrc: "/img/car-img-5.webp", href: "/ceramic-coating" },
     {
-      title: "Taillight/Headlight Tinting",
-      imgSrc: "/img/service/service-6.jpg",
+      title: "Web Design",
+      imgSrc: "/img/boat360-landing.png",
+      href: "/web-design"
     },
   ];
 
@@ -27,13 +33,14 @@ export const ServicesSection = () => {
         What services do we offer?
       </h3>
       <div className="grid pt-8 gap-4 m grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-format max-sm:px-[10%] h-fit">
-        {services.map(({ title, imgSrc }, index) => {
+        {services.map(({ title, imgSrc, href }, index) => {
           return (
             <ServiceItem
               key={`service-${index}`}
               isSeeMore={false}
               title={title}
               imgSrc={imgSrc}
+              href={href}
             />
           );
         })}
@@ -48,8 +55,9 @@ export const ServicesSection = () => {
   );
 };
 
-export const ServiceItem = ({ isSeeMore, title, imgSrc }: ServiceItemProps) => {
+export const ServiceItem = ({ isSeeMore, title, imgSrc, href }: ServiceItemProps) => {
   return (
+    <Link href={href} className="hover:scale-[1.02] transition-transform">
     <div className="relative overflow-hidden text-base font-medium rounded-xl aspect-[5/3]">
       <div className="absolute line-clamp-1 z-20 bg-primary text-background opacity-90 left-0 right-0 p-3 sm:p-2 px-6 text-center">
         {title}
@@ -61,6 +69,7 @@ export const ServiceItem = ({ isSeeMore, title, imgSrc }: ServiceItemProps) => {
       ) : null}
       <Image src={imgSrc} fill className="object-fill" alt="Service Image" />
     </div>
+    </Link>
   );
 };
 
@@ -68,4 +77,5 @@ export interface ServiceItemProps {
   isSeeMore?: boolean;
   title: string;
   imgSrc: string;
+  href: string;
 }
