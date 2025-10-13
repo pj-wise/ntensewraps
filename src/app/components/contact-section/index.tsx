@@ -6,7 +6,6 @@ import { contactSchema } from "@/types/contact";
 import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { useForm as useFormspreeForm } from "@formspree/react";
-import { isGeneratorObject } from "util/types";
 
 const CONTACT_FORM_ID = "xqalwwjp";
 const SUBSCRIPTION_FORM_ID = "xqalwwjp";
