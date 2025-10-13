@@ -29,6 +29,9 @@ export const ContactSection = () => {
     if (contactFormState.succeeded) {
       alert("Thank you! Your message has been sent successfully.");
       reset();
+
+      // @ts-ignore
+      gtag_report_conversion();
       window.location.reload();
     }
   }, [contactFormState.succeeded, reset]);
@@ -38,8 +41,6 @@ export const ContactSection = () => {
     if (subscriptionFormState.succeeded) {
       alert("Thank you for subscribing to our newsletter!");
 
-      // @ts-ignore
-      gtag_report_conversion();
       window.location.reload();
     }
   }, [subscriptionFormState.succeeded]);
