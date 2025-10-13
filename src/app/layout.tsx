@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   }
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -60,6 +61,24 @@ export default function RootLayout({
             `,
           }}
         />
+         <Script id="lead-form-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': '${process.env.NEXT_PUBLIC_GADS_ID}/GIT_CKrcrKwbELHfh54q',
+                'value': 1.0,
+                'currency': 'USD',
+                'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
       </head>
       <body className="bg-background text-foreground">
         {/* Google Tag Manager (noscript) */}
