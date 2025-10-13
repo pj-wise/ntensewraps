@@ -6,6 +6,7 @@ import { contactSchema } from "@/types/contact";
 import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { useForm as useFormspreeForm } from "@formspree/react";
+import { isGeneratorObject } from "util/types";
 
 const CONTACT_FORM_ID = "xqalwwjp";
 const SUBSCRIPTION_FORM_ID = "xqalwwjp";
@@ -37,6 +38,9 @@ export const ContactSection = () => {
   useEffect(() => {
     if (subscriptionFormState.succeeded) {
       alert("Thank you for subscribing to our newsletter!");
+
+      // @ts-ignore
+      gtag_report_conversion();
       window.location.reload();
     }
   }, [subscriptionFormState.succeeded]);
