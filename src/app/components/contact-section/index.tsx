@@ -37,6 +37,9 @@ export const ContactSection = () => {
   useEffect(() => {
     if (subscriptionFormState.succeeded) {
       alert("Thank you for subscribing to our newsletter!");
+
+      // @ts-ignore
+      gtag_report_conversion();
       window.location.reload();
     }
   }, [subscriptionFormState.succeeded]);
