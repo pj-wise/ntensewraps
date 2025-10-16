@@ -79,6 +79,15 @@ export default function RootLayout({
             }
           `}
         </Script>
+        <Script id="conversion-tracking" strategy="afterInteractive">
+            {`
+              gtag('event', 'conversion', {
+                'send_to': '${process.env.NEXT_PUBLIC_GADS_ID}/xQ2PCOvRq60bELHfh54q',
+                'value': 1.0,
+                'currency': 'USD'
+                });`
+            }
+        </Script>
       </head>
       <body className="bg-background text-foreground">
         {/* Google Tag Manager (noscript) */}
