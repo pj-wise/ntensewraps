@@ -107,7 +107,8 @@ export const ContactSection = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <p className="text-center text-primary font-medium text-sm max-w-[240px] mx-auto">
-            1066 SW Cornelia Ave, Port St. Lucie, FL 34953, United States
+            11958 SW Tom Mackie Blvd, Unit 116 - 118,Port St. Lucie, FL 34987,
+            United States
           </p>
 
           <p className="text-center text-xs">
